@@ -397,8 +397,8 @@
       ],
       "format": "esm"
     },
-    "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/yXCXDsuIfgRIy98Ufc10/WxWTmOoEB.js": {
-      "bytes": 5897,
+    "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/AKhkGySBkDBZY5ZPrIaw/WxWTmOoEB.js": {
+      "bytes": 5870,
       "imports": [
         {
           "path": "react/jsx-runtime",
@@ -423,7 +423,7 @@
       ],
       "format": "esm"
     },
-    "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js": {
+    "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/wnGcEu1lTR2KI2Mz7pee/tDertsTkA.js": {
       "bytes": 11035,
       "imports": [
         {
@@ -447,9 +447,9 @@
           "external": true
         },
         {
-          "path": "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/yXCXDsuIfgRIy98Ufc10/WxWTmOoEB.js",
+          "path": "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/AKhkGySBkDBZY5ZPrIaw/WxWTmOoEB.js",
           "kind": "import-statement",
-          "original": "https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/yXCXDsuIfgRIy98Ufc10/WxWTmOoEB.js"
+          "original": "https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/AKhkGySBkDBZY5ZPrIaw/WxWTmOoEB.js"
         }
       ],
       "format": "esm"
@@ -468,9 +468,9 @@
           "external": true
         },
         {
-          "path": "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js",
+          "path": "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/wnGcEu1lTR2KI2Mz7pee/tDertsTkA.js",
           "kind": "import-statement",
-          "original": "https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js"
+          "original": "https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/wnGcEu1lTR2KI2Mz7pee/tDertsTkA.js"
         },
         {
           "path": "unframer",
@@ -825,14 +825,14 @@
         "virtual:table-item": {
           "bytesInOutput": 1160
         },
-        "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js": {
+        "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/wnGcEu1lTR2KI2Mz7pee/tDertsTkA.js": {
           "bytesInOutput": 10113
         },
-        "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/yXCXDsuIfgRIy98Ufc10/WxWTmOoEB.js": {
-          "bytesInOutput": 5050
+        "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/AKhkGySBkDBZY5ZPrIaw/WxWTmOoEB.js": {
+          "bytesInOutput": 5023
         }
       },
-      "bytes": 16723
+      "bytes": 16696
     },
     "famous-filter.js": {
       "imports": [

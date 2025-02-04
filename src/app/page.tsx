@@ -34,9 +34,6 @@ export default function Home() {
                         `?${inputName}=${encodeURIComponent(searchQuery)}`,
                     )
                 }}
-                onSubmit={(e) => {
-                    e.preventDefault()
-                }}
                 className='bg-white min-w-[700px] p-10 mx-auto self-center'
             >
                 <SearchbarFramerComponent className='' searchName={inputName} />

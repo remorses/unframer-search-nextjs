@@ -36,7 +36,10 @@ export default function Home() {
                 }}
                 className='bg-white min-w-[700px] p-10 mx-auto self-center'
             >
-                <SearchbarFramerComponent searchName={inputName} />
+                <SearchbarFramerComponent
+                    className=''
+                    searchName={inputName}
+                />
                 <div className='flex flex-col gap-4'>
                     {filteredData.map((x) => {
                         const isSelected = selectedEmails.includes(x.email)

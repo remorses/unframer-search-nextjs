@@ -1,7 +1,7 @@
 {
   "inputs": {
-    "/:https://framerusercontent.com/modules/MGb5i1lpNqW2sCIpNofs/PLt9cfwX1zmG2dfq0i9T/uUekIdqaZ.js": {
-      "bytes": 12833,
+    "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/41eGtfpSXhIfXrwucTZ2/ZL3LBC_83.js": {
+      "bytes": 7311,
       "imports": [
         {
           "path": "react/jsx-runtime",
@@ -22,37 +22,6 @@
           "path": "react",
           "kind": "import-statement",
           "external": true
-        }
-      ],
-      "format": "esm"
-    },
-    "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js": {
-      "bytes": 8128,
-      "imports": [
-        {
-          "path": "react/jsx-runtime",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "unframer",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "unframer",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "react",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "/:https://framerusercontent.com/modules/MGb5i1lpNqW2sCIpNofs/PLt9cfwX1zmG2dfq0i9T/uUekIdqaZ.js",
-          "kind": "import-statement",
-          "original": "https://framerusercontent.com/modules/MGb5i1lpNqW2sCIpNofs/PLt9cfwX1zmG2dfq0i9T/uUekIdqaZ.js"
         }
       ],
       "format": "esm"
@@ -71,9 +40,9 @@
           "external": true
         },
         {
-          "path": "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js",
+          "path": "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/41eGtfpSXhIfXrwucTZ2/ZL3LBC_83.js",
           "kind": "import-statement",
-          "original": "https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js"
+          "original": "https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/41eGtfpSXhIfXrwucTZ2/ZL3LBC_83.js"
         },
         {
           "path": "unframer",
@@ -454,7 +423,7 @@
       ],
       "format": "esm"
     },
-    "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/ywwTGbQhWy3DllJAEUeB/tDertsTkA.js": {
+    "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js": {
       "bytes": 11035,
       "imports": [
         {
@@ -499,9 +468,9 @@
           "external": true
         },
         {
-          "path": "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/ywwTGbQhWy3DllJAEUeB/tDertsTkA.js",
+          "path": "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js",
           "kind": "import-statement",
-          "original": "https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/ywwTGbQhWy3DllJAEUeB/tDertsTkA.js"
+          "original": "https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js"
         },
         {
           "path": "unframer",
@@ -700,26 +669,6 @@
           "external": true
         },
         {
-          "path": "react/jsx-runtime",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "unframer",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "unframer",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "react",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
           "path": "unframer",
           "kind": "import-statement",
           "external": true
@@ -736,16 +685,13 @@
       "entryPoint": "virtual:searchbar",
       "inputs": {
         "virtual:searchbar": {
-          "bytesInOutput": 1160
+          "bytesInOutput": 1156
         },
-        "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js": {
-          "bytesInOutput": 7269
-        },
-        "/:https://framerusercontent.com/modules/MGb5i1lpNqW2sCIpNofs/PLt9cfwX1zmG2dfq0i9T/uUekIdqaZ.js": {
-          "bytesInOutput": 11814
+        "/:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/41eGtfpSXhIfXrwucTZ2/ZL3LBC_83.js": {
+          "bytesInOutput": 6298
         }
       },
-      "bytes": 20641
+      "bytes": 7654
     },
     "famous-people.js": {
       "imports": [
@@ -879,7 +825,7 @@
         "virtual:table-item": {
           "bytesInOutput": 1160
         },
-        "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/ywwTGbQhWy3DllJAEUeB/tDertsTkA.js": {
+        "/:https://framerusercontent.com/modules/1BPJ7OI1n0hs3BJeIg56/dHOdEh2trG9VrHd3MDKA/tDertsTkA.js": {
           "bytesInOutput": 10113
         },
         "/:https://framerusercontent.com/modules/RwfbfnEH940mwByoydl7/yXCXDsuIfgRIy98Ufc10/WxWTmOoEB.js": {

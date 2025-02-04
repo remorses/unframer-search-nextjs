@@ -4,34 +4,17 @@
 "use client";
 
 // virtual:searchbar
-import { Fragment as Fragment3 } from "react";
+import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js
-import { jsx as _jsx2, jsxs as _jsxs2 } from "react/jsx-runtime";
-import { addFonts as addFonts2, addPropertyControls as addPropertyControls2, ComponentViewportProvider, ControlType as ControlType2, cx as cx2, FormPlainTextInput, getFonts, useComponentViewport as useComponentViewport2, useLocaleInfo as useLocaleInfo2, useVariantState as useVariantState2, withCSS as withCSS2 } from "unframer";
-import { LayoutGroup as LayoutGroup2, motion as motion2, MotionConfigContext as MotionConfigContext2 } from "unframer";
-import * as React2 from "react";
-
-// /:https://framerusercontent.com/modules/MGb5i1lpNqW2sCIpNofs/PLt9cfwX1zmG2dfq0i9T/uUekIdqaZ.js
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { addFonts, addPropertyControls, ControlType, cx, RichText, useComponentViewport, useLocaleInfo, useVariantState, withCSS, withFX } from "unframer";
+// /:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/41eGtfpSXhIfXrwucTZ2/ZL3LBC_83.js
+import { jsx as _jsx } from "react/jsx-runtime";
+import { addFonts, addPropertyControls, ControlType, cx, FormPlainTextInput, useComponentViewport, useLocaleInfo, useVariantState, withCSS } from "unframer";
 import { LayoutGroup, motion, MotionConfigContext } from "unframer";
 import * as React from "react";
-var MotionDivWithFX = withFX(motion.div);
-var enabledGestures = { lqQFdRzDN: { hover: true, pressed: true } };
-var cycleOrder = ["lqQFdRzDN", "vYCEczzKa", "f16oEESWE", "nIUZwrM7c", "zH8VjSY1q"];
-var serializationHash = "framer-FbMwC";
-var variantClassNames = { f16oEESWE: "framer-v-5tujmi", lqQFdRzDN: "framer-v-1eoovzq", nIUZwrM7c: "framer-v-tx7358", vYCEczzKa: "framer-v-wf10gw", zH8VjSY1q: "framer-v-1ypc3sd" };
-function addPropertyOverrides(overrides, ...variants) {
-  const nextOverrides = {};
-  variants?.forEach((variant) => variant && Object.assign(nextOverrides, overrides[variant]));
-  return nextOverrides;
-}
-var transition1 = { delay: 0, duration: 0.2, ease: [0.44, 0, 0.56, 1], type: "tween" };
-var transition2 = { delay: 0, duration: 1, ease: [0, 0, 1, 1], type: "tween" };
-var animation = { opacity: 1, rotate: 360, rotateX: 0, rotateY: 0, scale: 1, skewX: 0, skewY: 0, x: 0, y: 0 };
-var transformTemplate1 = (_, t) => `translateX(-50%) ${t}`;
+var serializationHash = "framer-loqQm";
+var variantClassNames = { kcEi_ByjD: "framer-v-1co7xhi" };
+var transition1 = { bounce: 0.2, delay: 0, duration: 0.4, type: "spring" };
 var Transition = ({ value, children }) => {
   const config = React.useContext(MotionConfigContext);
   const transition = value ?? config.transition;
@@ -39,9 +22,8 @@ var Transition = ({ value, children }) => {
   return /* @__PURE__ */ _jsx(MotionConfigContext.Provider, { value: contextValue, children });
 };
 var Variants = motion.create(React.Fragment);
-var humanReadableVariantMap = { Default: "lqQFdRzDN", Disabled: "f16oEESWE", Error: "zH8VjSY1q", Loading: "vYCEczzKa", Success: "nIUZwrM7c" };
-var getProps = ({ height, id, width, ...props }) => {
-  return { ...props, variant: humanReadableVariantMap[props.variant] ?? props.variant ?? "lqQFdRzDN" };
+var getProps = ({ height, id, searchName, width, ...props }) => {
+  return { ...props, DWa1JQJOm: searchName ?? props.DWa1JQJOm ?? "search" };
 };
 var createLayoutDependency = (props, variants) => {
   if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
@@ -49,77 +31,30 @@ var createLayoutDependency = (props, variants) => {
 };
 var Component = /* @__PURE__ */ React.forwardRef(function(props, ref) {
   const { activeLocale, setLocale } = useLocaleInfo();
-  const { style, className, layoutId, variant, ...restProps } = getProps(props);
-  const { baseVariant, classNames, clearLoadingGesture, gestureHandlers, gestureVariant, isLoading, setGestureState, setVariant, variants } = useVariantState({ cycleOrder, defaultVariant: "lqQFdRzDN", enabledGestures, variant, variantClassNames });
+  const { style, className, layoutId, variant, DWa1JQJOm, ...restProps } = getProps(props);
+  const { baseVariant, classNames, clearLoadingGesture, gestureHandlers, gestureVariant, isLoading, setGestureState, setVariant, variants } = useVariantState({ defaultVariant: "kcEi_ByjD", variant, variantClassNames });
   const layoutDependency = createLayoutDependency(props, variants);
   const sharedStyleClassNames = [];
   const scopingClassNames = cx(serializationHash, ...sharedStyleClassNames);
   const ref1 = React.useRef(null);
-  const isDisplayed = () => {
-    if (baseVariant === "vYCEczzKa") return false;
-    return true;
-  };
-  const isDisplayed1 = () => {
-    if (baseVariant === "vYCEczzKa") return true;
-    return false;
-  };
   const defaultLayoutId = React.useId();
   const componentViewport = useComponentViewport();
-  return /* @__PURE__ */ _jsx(LayoutGroup, { id: layoutId ?? defaultLayoutId, children: /* @__PURE__ */ _jsx(Variants, { animate: variants, initial: false, children: /* @__PURE__ */ _jsx(Transition, { value: transition1, children: /* @__PURE__ */ _jsxs(motion.button, { ...restProps, ...gestureHandlers, className: cx(scopingClassNames, "framer-1eoovzq", className, classNames), "data-framer-name": "Default", "data-reset": "button", layoutDependency, layoutId: "lqQFdRzDN", ref: ref ?? ref1, style: { backgroundColor: "rgb(51, 51, 51)", borderBottomLeftRadius: 10, borderBottomRightRadius: 10, borderTopLeftRadius: 10, borderTopRightRadius: 10, opacity: 1, ...style }, variants: { "lqQFdRzDN-hover": { backgroundColor: "rgba(51, 51, 51, 0.85)", opacity: 1 }, "lqQFdRzDN-pressed": { opacity: 1 }, f16oEESWE: { opacity: 0.5 }, nIUZwrM7c: { opacity: 1 }, zH8VjSY1q: { backgroundColor: "rgba(255, 34, 68, 0.15)", opacity: 1 } }, ...addPropertyOverrides({ "lqQFdRzDN-hover": { "data-framer-name": void 0 }, "lqQFdRzDN-pressed": { "data-framer-name": void 0 }, f16oEESWE: { "data-framer-name": "Disabled" }, nIUZwrM7c: { "data-framer-name": "Success" }, vYCEczzKa: { "data-framer-name": "Loading" }, zH8VjSY1q: { "data-framer-name": "Error" } }, baseVariant, gestureVariant), children: [isDisplayed() && /* @__PURE__ */ _jsx(RichText, { __fromCanvasComponent: true, children: /* @__PURE__ */ _jsx(React.Fragment, { children: /* @__PURE__ */ _jsx(motion.p, { style: { "--font-selector": "SW50ZXItU2VtaUJvbGQ=", "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif', "--framer-font-size": "14px", "--framer-font-weight": "600", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }, children: "Submit" }) }), className: "framer-1h28aih", fonts: ["Inter-SemiBold"], layoutDependency, layoutId: "fSUfDmysi", style: { "--extracted-r6o4lv": "rgb(255, 255, 255)", "--framer-link-text-color": "rgb(0, 153, 255)", "--framer-link-text-decoration": "underline" }, variants: { zH8VjSY1q: { "--extracted-r6o4lv": "rgb(255, 34, 68)" } }, verticalAlignment: "top", withExternalLayout: true, ...addPropertyOverrides({ nIUZwrM7c: { children: /* @__PURE__ */ _jsx(React.Fragment, { children: /* @__PURE__ */ _jsx(motion.p, { style: { "--font-selector": "SW50ZXItU2VtaUJvbGQ=", "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif', "--framer-font-size": "14px", "--framer-font-weight": "600", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))" }, children: "Thank you" }) }) }, zH8VjSY1q: { children: /* @__PURE__ */ _jsx(React.Fragment, { children: /* @__PURE__ */ _jsx(motion.p, { style: { "--font-selector": "SW50ZXItU2VtaUJvbGQ=", "--framer-font-family": '"Inter", "Inter Placeholder", sans-serif', "--framer-font-size": "14px", "--framer-font-weight": "600", "--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 34, 68))" }, children: "Something went wrong" }) }) } }, baseVariant, gestureVariant) }), isDisplayed1() && /* @__PURE__ */ _jsx(motion.div, { className: "framer-1s6olls", "data-framer-name": "Spinner", layoutDependency, layoutId: "epov98WS3", style: { mask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg') alpha no-repeat center / cover add", WebkitMask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg') alpha no-repeat center / cover add" }, children: /* @__PURE__ */ _jsx(MotionDivWithFX, { __framer__loop: animation, __framer__loopEffectEnabled: true, __framer__loopRepeatDelay: 0, __framer__loopRepeatType: "loop", __framer__loopTransition: transition2, __perspectiveFX: false, __smartComponentFX: true, __targetOpacity: 1, className: "framer-15sg5ne", "data-framer-name": "Conic", layoutDependency, layoutId: "qC09NJf4X", style: { background: "conic-gradient(from 180deg at 50% 50%, rgb(68, 204, 255) 0deg, rgb(68, 204, 255) 360deg)", backgroundColor: "rgb(68, 204, 255)", mask: "none", WebkitMask: "none" }, variants: { vYCEczzKa: { background: "conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 7.208614864864882deg, rgb(255, 255, 255) 342deg)", backgroundColor: "rgba(0, 0, 0, 0)", mask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg') alpha no-repeat center / cover add", WebkitMask: "url('https://framerusercontent.com/images/pGiXYozQ3mE4cilNOItfe2L2fUA.svg') alpha no-repeat center / cover add" } }, children: /* @__PURE__ */ _jsx(motion.div, { className: "framer-15mnfms", "data-framer-name": "Rounding", layoutDependency, layoutId: "XBDRAaUC7", style: { backgroundColor: "rgb(255, 255, 255)", borderBottomLeftRadius: 1, borderBottomRightRadius: 1, borderTopLeftRadius: 1, borderTopRightRadius: 1 }, transformTemplate: transformTemplate1 }) }) })] }) }) }) });
+  return /* @__PURE__ */ _jsx(LayoutGroup, { id: layoutId ?? defaultLayoutId, children: /* @__PURE__ */ _jsx(Variants, { animate: variants, initial: false, children: /* @__PURE__ */ _jsx(Transition, { value: transition1, children: /* @__PURE__ */ _jsx(motion.div, { ...restProps, ...gestureHandlers, className: cx(scopingClassNames, "framer-1co7xhi", className, classNames), "data-framer-name": "Variant 1", layoutDependency, layoutId: "kcEi_ByjD", ref: ref ?? ref1, style: { ...style }, children: /* @__PURE__ */ _jsx(FormPlainTextInput, { className: "framer-90fkb5", inputName: DWa1JQJOm, layoutDependency, layoutId: "t9NiYpK9X", placeholder: "Search", style: { "--framer-input-background": "rgba(187, 187, 187, 0.15)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-radius-bottom-left": "10px", "--framer-input-border-radius-bottom-right": "10px", "--framer-input-border-radius-top-left": "10px", "--framer-input-border-radius-top-right": "10px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(153, 153, 153)", "--framer-input-icon-color": "rgb(153, 153, 153)", "--framer-input-placeholder-color": "rgb(153, 153, 153)" }, type: "text" }) }) }) }) });
 });
-var css = ["@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }", ".framer-FbMwC.framer-7tn2ng, .framer-FbMwC .framer-7tn2ng { display: block; }", ".framer-FbMwC.framer-1eoovzq { align-content: center; align-items: center; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; gap: 0px; height: 40px; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 240px; }", ".framer-FbMwC .framer-1h28aih { -webkit-user-select: none; flex: none; height: auto; position: relative; user-select: none; white-space: pre; width: auto; }", ".framer-FbMwC .framer-1s6olls { aspect-ratio: 1 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 20px); overflow: hidden; position: relative; width: 20px; }", ".framer-FbMwC .framer-15sg5ne { bottom: 0px; flex: none; left: 0px; overflow: visible; position: absolute; right: 0px; top: 0px; }", ".framer-FbMwC .framer-15mnfms { aspect-ratio: 1 / 1; flex: none; height: var(--framer-aspect-ratio-supported, 2px); left: 50%; overflow: visible; position: absolute; top: 0px; width: 2px; }", "@supports (background: -webkit-named-image(i)) and (not (font-palette:dark)) { .framer-FbMwC.framer-1eoovzq { gap: 0px; } .framer-FbMwC.framer-1eoovzq > * { margin: 0px; margin-left: calc(0px / 2); margin-right: calc(0px / 2); } .framer-FbMwC.framer-1eoovzq > :first-child { margin-left: 0px; } .framer-FbMwC.framer-1eoovzq > :last-child { margin-right: 0px; } }", ".framer-FbMwC.framer-v-wf10gw.framer-1eoovzq, .framer-FbMwC.framer-v-5tujmi.framer-1eoovzq, .framer-FbMwC.framer-v-tx7358.framer-1eoovzq, .framer-FbMwC.framer-v-1ypc3sd.framer-1eoovzq { cursor: unset; }", ".framer-FbMwC.framer-v-wf10gw .framer-15sg5ne { overflow: hidden; }"];
-var FrameruUekIdqaZ = withCSS(Component, css, "framer-FbMwC");
-var stdin_default = FrameruUekIdqaZ;
-FrameruUekIdqaZ.displayName = "Button";
-FrameruUekIdqaZ.defaultProps = { height: 40, width: 240 };
-addPropertyControls(FrameruUekIdqaZ, { variant: { options: ["lqQFdRzDN", "vYCEczzKa", "f16oEESWE", "nIUZwrM7c", "zH8VjSY1q"], optionTitles: ["Default", "Loading", "Disabled", "Success", "Error"], title: "Variant", type: ControlType.Enum } });
-addFonts(FrameruUekIdqaZ, [{ explicitInter: true, fonts: [{ family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F", url: "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116", url: "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+1F00-1FFF", url: "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0370-03FF", url: "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF", url: "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD", url: "https://framerusercontent.com/assets/1ZFS7N918ojhhd0nQWdj3jz4w.woff2", weight: "600" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB", url: "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2", weight: "600" }] }], { supportsExplicitInterCodegen: true });
-
-// /:https://framerusercontent.com/modules/kE1RWNdmC798HirOdRcD/H0R7soO4gkbH3dXwjk7s/ZL3LBC_83.js
-var ButtonFonts = getFonts(stdin_default);
-var serializationHash2 = "framer-ugbvB";
-var variantClassNames2 = { kcEi_ByjD: "framer-v-1co7xhi" };
-var transition12 = { bounce: 0.2, delay: 0, duration: 0.4, type: "spring" };
-var Transition2 = ({ value, children }) => {
-  const config = React2.useContext(MotionConfigContext2);
-  const transition = value ?? config.transition;
-  const contextValue = React2.useMemo(() => ({ ...config, transition }), [JSON.stringify(transition)]);
-  return /* @__PURE__ */ _jsx2(MotionConfigContext2.Provider, { value: contextValue, children });
-};
-var Variants2 = motion2.create(React2.Fragment);
-var getProps2 = ({ height, id, searchName, width, ...props }) => {
-  return { ...props, DWa1JQJOm: searchName ?? props.DWa1JQJOm ?? "search" };
-};
-var createLayoutDependency2 = (props, variants) => {
-  if (props.layoutDependency) return variants.join("-") + props.layoutDependency;
-  return variants.join("-");
-};
-var Component2 = /* @__PURE__ */ React2.forwardRef(function(props, ref) {
-  const { activeLocale, setLocale } = useLocaleInfo2();
-  const { style, className, layoutId, variant, DWa1JQJOm, ...restProps } = getProps2(props);
-  const { baseVariant, classNames, clearLoadingGesture, gestureHandlers, gestureVariant, isLoading, setGestureState, setVariant, variants } = useVariantState2({ defaultVariant: "kcEi_ByjD", variant, variantClassNames: variantClassNames2 });
-  const layoutDependency = createLayoutDependency2(props, variants);
-  const sharedStyleClassNames = [];
-  const scopingClassNames = cx2(serializationHash2, ...sharedStyleClassNames);
-  const ref1 = React2.useRef(null);
-  const defaultLayoutId = React2.useId();
-  const componentViewport = useComponentViewport2();
-  return /* @__PURE__ */ _jsx2(LayoutGroup2, { id: layoutId ?? defaultLayoutId, children: /* @__PURE__ */ _jsx2(Variants2, { animate: variants, initial: false, children: /* @__PURE__ */ _jsx2(Transition2, { value: transition12, children: /* @__PURE__ */ _jsxs2(motion2.div, { ...restProps, ...gestureHandlers, className: cx2(scopingClassNames, "framer-1co7xhi", className, classNames), "data-framer-name": "Variant 1", layoutDependency, layoutId: "kcEi_ByjD", ref: ref ?? ref1, style: { ...style }, children: [/* @__PURE__ */ _jsx2(FormPlainTextInput, { className: "framer-90fkb5", inputName: DWa1JQJOm, layoutDependency, layoutId: "t9NiYpK9X", placeholder: "Search", style: { "--framer-input-background": "rgba(187, 187, 187, 0.15)", "--framer-input-border-bottom-width": "1px", "--framer-input-border-color": "rgba(136, 136, 136, 0.1)", "--framer-input-border-left-width": "1px", "--framer-input-border-radius-bottom-left": "10px", "--framer-input-border-radius-bottom-right": "10px", "--framer-input-border-radius-top-left": "10px", "--framer-input-border-radius-top-right": "10px", "--framer-input-border-right-width": "1px", "--framer-input-border-style": "solid", "--framer-input-border-top-width": "1px", "--framer-input-font-color": "rgb(153, 153, 153)", "--framer-input-icon-color": "rgb(153, 153, 153)", "--framer-input-placeholder-color": "rgb(153, 153, 153)" }, type: "text" }), /* @__PURE__ */ _jsx2(ComponentViewportProvider, { height: 40, width: "177px", y: (componentViewport?.y || 0) + (0 + ((componentViewport?.height || 40) - 0 - 40) / 2), children: /* @__PURE__ */ _jsx2(motion2.div, { className: "framer-1x98acb-container", layoutDependency, layoutId: "KTQQntHHH-container", children: /* @__PURE__ */ _jsx2(stdin_default, { height: "100%", id: "KTQQntHHH", layoutId: "KTQQntHHH", style: { height: "100%", width: "100%" }, variant: "lqQFdRzDN", width: "100%" }) }) })] }) }) }) });
-});
-var css2 = ["@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }", ".framer-ugbvB.framer-lzy0ty, .framer-ugbvB .framer-lzy0ty { display: block; }", ".framer-ugbvB.framer-1co7xhi { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: 40px; justify-content: space-between; overflow: hidden; padding: 0px; position: relative; width: 419px; }", '.framer-ugbvB .framer-90fkb5 { --framer-input-focused-border-color: #0099ff; --framer-input-focused-border-style: solid; --framer-input-focused-border-width: 1px; --framer-input-font-family: "Inter"; --framer-input-font-letter-spacing: 0em; --framer-input-font-line-height: 1.2em; --framer-input-font-size: 14px; --framer-input-font-weight: 400; --framer-input-padding: 12px; flex: none; height: 40px; position: relative; width: 200px; }', ".framer-ugbvB .framer-1x98acb-container { flex: none; height: 40px; position: relative; width: 177px; }"];
-var FramerZL3LBC_83 = withCSS2(Component2, css2, "framer-ugbvB");
-var stdin_default2 = FramerZL3LBC_83;
+var css = ["@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }", ".framer-loqQm.framer-lzy0ty, .framer-loqQm .framer-lzy0ty { display: block; }", ".framer-loqQm.framer-1co7xhi { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: 40px; justify-content: space-between; overflow: hidden; padding: 0px; position: relative; width: 419px; }", '.framer-loqQm .framer-90fkb5 { --framer-input-focused-border-color: #0099ff; --framer-input-focused-border-style: solid; --framer-input-focused-border-width: 1px; --framer-input-font-family: "Inter"; --framer-input-font-letter-spacing: 0em; --framer-input-font-line-height: 1.2em; --framer-input-font-size: 14px; --framer-input-font-weight: 400; --framer-input-padding: 12px; flex: 1 0 0px; height: 40px; position: relative; width: 1px; }'];
+var FramerZL3LBC_83 = withCSS(Component, css, "framer-loqQm");
+var stdin_default = FramerZL3LBC_83;
 FramerZL3LBC_83.displayName = "Searchbar";
 FramerZL3LBC_83.defaultProps = { height: 40, width: 419 };
-addPropertyControls2(FramerZL3LBC_83, { DWa1JQJOm: { defaultValue: "search", title: "searchName", type: ControlType2.String } });
-addFonts2(FramerZL3LBC_83, [{ explicitInter: true, fonts: [{ family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F", url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116", url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+1F00-1FFF", url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0370-03FF", url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF", url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD", url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB", url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2", weight: "400" }] }, ...ButtonFonts], { supportsExplicitInterCodegen: true });
+addPropertyControls(FramerZL3LBC_83, { DWa1JQJOm: { defaultValue: "search", title: "searchName", type: ControlType.String } });
+addFonts(FramerZL3LBC_83, [{ explicitInter: true, fonts: [{ family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F", url: "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116", url: "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+1F00-1FFF", url: "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0370-03FF", url: "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF", url: "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD", url: "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2", weight: "400" }, { family: "Inter", source: "framer", style: "normal", unicodeRange: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB", url: "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2", weight: "400" }] }], { supportsExplicitInterCodegen: true });
 
 // virtual:searchbar
 import { WithFramerBreakpoints } from "unframer";
 import { jsx } from "react/jsx-runtime";
 var locales = [];
 var defaultResponsiveVariants = {};
-stdin_default2.Responsive = ({ locale, ...rest }) => {
+stdin_default.Responsive = ({ locale, ...rest }) => {
   return /* @__PURE__ */ jsx(
     ContextProviders,
     {
@@ -127,7 +62,7 @@ stdin_default2.Responsive = ({ locale, ...rest }) => {
       children: /* @__PURE__ */ jsx(
         WithFramerBreakpoints,
         {
-          Component: stdin_default2,
+          Component: stdin_default,
           variants: defaultResponsiveVariants,
           ...rest
         }
@@ -147,14 +82,14 @@ function ComponentWithRoot({ locale, ...rest }) {
           "path": "/"
         }
       },
-      children: /* @__PURE__ */ jsx(stdin_default2, { ...rest }),
+      children: /* @__PURE__ */ jsx(stdin_default, { ...rest }),
       framerSiteId: "3e9f5e2dfe1fa837fdde6786fd170fa8b16329662ea08209301f1736684b7d60",
       locale,
       locales
     }
   );
 }
-Object.assign(ComponentWithRoot, stdin_default2);
+Object.assign(ComponentWithRoot, stdin_default);
 export {
   ComponentWithRoot as default
 };

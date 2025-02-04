@@ -1,5 +1,5 @@
 'use client'
-import 'website/src/framer/styles.css'
+
 import { useSearchParams, useRouter } from 'next/navigation'
 
 import Image from 'next/image'

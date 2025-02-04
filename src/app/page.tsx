@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import Image from 'next/image'
 import SearchbarFramerComponent from 'website/src/framer/searchbar'
 import TableItemFramerComponent from 'website/src/framer/table-item'
+import { useState } from 'react'
 
 const data = [
     {
@@ -35,11 +36,11 @@ const data = [
 ]
 
 const inputName = 'search-input'
-
 export default function Home() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const query = searchParams.get(inputName) || ''
+    const [selectedEmails, setSelectedEmails] = useState<string[]>([])
 
     const searchLower = query.toLowerCase()
     const filteredData = data.filter(
@@ -66,7 +67,24 @@ export default function Home() {
                 <SearchbarFramerComponent searchName={inputName} />
                 <div className='flex flex-col gap-4'>
                     {filteredData.map((x) => {
-                        return <TableItemFramerComponent key={x.email} {...x} />
+                        const isSelected = selectedEmails.includes(x.email)
+                        return (
+                            <TableItemFramerComponent
+                                {...x}
+                                optionVariant={isSelected ? 'filled' : 'empty'}
+                                selectionClick={() => {
+                                    setSelectedEmails((prev) => {
+                                        if (isSelected) {
+                                            return prev.filter(
+                                                (email) => email !== x.email,
+                                            )
+                                        }
+                                        return [...prev, x.email]
+                                    })
+                                }}
+                                key={x.email}
+                            />
+                        )
                     })}
                 </div>
             </form>

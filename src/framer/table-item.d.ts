@@ -16,6 +16,8 @@ export interface Props {
     "status"?: string
     "email"?: string
     "cost"?: string
+    "selectionClick"?: Function
+    "optionVariant"?: 'empty' | 'filled'
 }
 
 const TableItemFramerComponent = (props: Props) => any

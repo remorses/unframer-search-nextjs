@@ -36,6 +36,7 @@ const data = [
 ]
 
 const inputName = 'search-input'
+
 export default function Home() {
     const router = useRouter()
     const searchParams = useSearchParams()
@@ -53,8 +54,7 @@ export default function Home() {
     return (
         <div className='flex flex-col'>
             <form
-                onSubmit={(e) => {
-                    e.preventDefault()
+                onChange={(e) => {
                     const formData = new FormData(e.currentTarget)
                     const searchQuery =
                         formData.get(inputName)?.toString() || ''
